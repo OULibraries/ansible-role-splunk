@@ -1,0 +1,14 @@
+---
+
+- name: Yum update
+  yum:
+    name: "*"
+    state: latest
+    update_cache: yes
+
+- name: Install Splunk from remote RPM
+  yum:
+    name: https://download.splunk.com/products/splunk/releases/7.0.1/linux/splunk-7.0.1-2b5b15c4ee89-linux-2.6-x86_64.rpm
+    state: present
+
+
