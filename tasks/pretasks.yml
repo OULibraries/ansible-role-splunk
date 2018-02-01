@@ -2,7 +2,7 @@
 
 - name: "Ensure centOS base box present"
   tasks: 
-  - include_role:
+- include_role:
       name: centos7
 
 
